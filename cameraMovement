@@ -1,0 +1,31 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class camerMovement : MonoBehaviour
+{
+    public float cameraSpeed;
+    //private bool isTimeIncreased = false;
+    //public scoreManager score;
+
+    void Update()
+    {
+        transform.position += new Vector3(cameraSpeed * Time.deltaTime, 0, 0);
+
+        //experimenting for increasing speed with time
+        /*if(Time.time > 45 && !isTimeIncreased)
+        {
+            cameraSpeed += 5;
+            isTimeIncreased = true;
+
+            if (Time.time > 60 && isTimeIncreased)
+            {
+                cameraSpeed += 5;
+                isTimeIncreased = false;
+            }
+        }
+        */
+        
+        
+    }
+}
